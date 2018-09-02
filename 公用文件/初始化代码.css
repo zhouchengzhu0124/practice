@@ -1,0 +1,77 @@
+/* ----------- 初始化代码开始 ----------- */
+body,a,tr,td,ul,li,ol,dl,dt,h1,h2,h3,h4,h5,h6,span,div,img,input,p,b,u,i,del{
+    padding: 0;
+    margin: 0;
+}
+
+body{
+
+    font: 14px/100% "Microsoft Yahei";
+    color: #333333;
+    background-color: #f6f6f6;
+}
+
+a{
+    text-decoration-line: none;
+    color: #333333; 
+}
+
+i,em{
+    font-style: normal;
+}
+
+h1,h2,h3,h4,h5,h6{
+    font-weight: normal;
+}
+
+/* 去掉li元素的左侧默认黑色小圆点 */
+li{
+    list-style: none;
+}
+
+/* 去掉自定义列表的dd的默认缩进 */
+dd{
+    margin-left: 0px;
+    /* background-color: lightcoral;  */
+}
+
+input{
+    /* 清除文本框默认边框 */
+    border: 0 none;
+    /* 清除文本框高亮提示 */
+    outline: none;
+}
+
+img{
+    /* 使行内块元素中线对齐 */
+    vertical-align: middle;
+    /* 在低版本的浏览器中 img自带边框 */
+    border: 0 none;
+}
+
+.line{
+    height: 1px;
+    background-color: #ededed;
+}
+
+/* 设置版心 */
+.w{
+    width: 1200px;
+    margin: 0 auto;
+}
+
+/* 清除浮动带来的影响 */
+.clearfix::after{
+    content: "";
+    display: block;
+    clear: both;
+
+    height: 0;
+    visibility: hidden;
+}
+
+.clearfix{
+    *zoom: 1;
+}
+
+/* 以上初始化代码完成 */

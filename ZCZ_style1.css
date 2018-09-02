@@ -1,0 +1,729 @@
+/*初始化代码开始*/
+body,
+div,
+span,
+a,
+input,
+li,
+ul,
+ol,
+img,
+h1,
+h2,
+h3,
+h4,
+i,
+em,
+b,
+p,
+del {
+    margin: 0;
+    padding: 0;
+}
+
+input {
+    outline: none;
+    border: 0 none;
+}
+
+img {
+    border: 0 none;
+    vertical-align: middle;
+}
+
+a {
+    text-decoration: none;
+    color: #fff;
+}
+
+a:hover {
+    color: #31c27c;
+}
+
+li {
+    list-style: none;
+}
+
+h1,
+h2,
+h3,
+h4 {
+    font-weight: normal;
+}
+
+i,em {
+    font-style: normal;
+}
+
+body {
+    font: 14px/100% "微软雅黑";
+    background-color: #f6f6f6;
+}
+
+.w {
+    width: 1200px;
+    margin: 0 auto;
+}
+
+.clearfix:after {
+    content: "";
+    display: block;
+    clear: both;
+    height: 0;
+    visibility: hidden;
+}
+
+.clearfix {
+    *zoom:1;
+}
+
+/*顶部通栏*/
+.banner {
+    position: fixed;
+    width:100%;
+    height: 80px;
+    background-color: rgba(0,0,0,.3);
+    overflow: hidden;
+    z-index: 100;
+}
+.banner_inner {
+    height:46px;
+    margin: 17px auto;
+}
+.banner .logo {
+    float: left;
+    background: url("ZCZ_images/logo1.png") no-repeat;
+    background-size: 46px 46px;
+    line-height: 46px;
+}
+.banner .logo a:hover {
+    color:#fff;
+}
+.banner .logo a {
+    font-size: 30px;
+    padding-left: 56px;
+}
+.banner_inner .nav  {
+    float: left;
+    height: 46px;
+    margin-left: 80px;
+}
+.banner_inner .nav a {
+    padding-right: 60px;
+    line-height: 46px;
+    font-size: 20px;
+}
+.banner .current {
+    color: #31c27c;
+}
+.banner_inner .nav_right {
+    float: right;
+}
+.banner_inner .nav_right a {
+    font-size: 20px;
+    line-height: 46px;
+    padding-left: 30px;
+}
+/*顶部通栏结束*/
+body {
+    background-color: #000;
+}
+.Full_main {
+    position: relative;
+    width: 1366px;
+    height: 3250px;
+    margin: 0 auto;
+}
+#nav_point {
+    position: fixed;
+    top:300px;
+    right: 32px;
+    width: 20px;
+    height: 100px;
+    z-index: 200;
+}
+#nav_point a {
+    display: block;
+    float: left;
+    width: 12px;
+    height: 12px;
+    margin: 4px 4px;
+    border-radius: 9px;
+    background-color: #fff;
+    opacity: .35;
+}
+#nav_point .point1 {
+    opacity: 1;
+}
+
+.main1 {
+    position: absolute;
+    margin: 0 auto;
+    width: 100%;
+    height: 650px;
+    display: block;
+}
+.main1 .main1_bg {
+    width: 100%;
+    height:100%;
+}
+
+.main1 .main1_bg .current {
+    display: block;
+}
+
+.main1 .main1_bg img {
+    width: 100%;
+    height: 100%;
+    display: none;
+}
+
+.main1 .download_btn a:hover {
+    color:#fff;
+}
+.main1 .download_list {
+    position: absolute;
+    top: 503px;
+    width: 100%;
+    height: 146px;
+    border-top:1px solid rgba(92,105,123,.6);
+    display: block;
+}
+
+.main1 p {
+    position: absolute;
+    left: 680px;
+    color: #fff;
+}
+
+.main1 .bgwords .green {
+    position: absolute;
+    top: 375px;
+    right: 447px;
+    width: 220px;
+    height: 52px;
+    border-radius: 26px;
+    background-color: #31c27c;
+    text-align: center;
+    line-height: 50px;
+    font-size: 24px;
+    color: #fff;
+}
+
+
+.main1 .first_bgwords .num1 {
+    top: 174px;
+    font-size: 50px;
+}
+.main1 .first_bgwords .num2 {
+    top: 250px;
+    font-size: 50px;
+}
+.main1 .first_bgwords .num3 {
+    top: 316px;
+    font-weight: 300;
+    font-size: 24px;
+    opacity: .7;
+}
+
+.main1 .second_bgwords .num1 {
+    top: 190px;
+    font-size: 50px;
+}
+.main1 .second_bgwords .num2 {
+    top: 266px;
+    font-size: 50px;
+}
+.main1 .second_bgwords {
+    display: none;
+}
+
+.main1 .third_bgwords .num1 {
+    top: 200px;
+    font-size: 50px;
+}
+.main1 .third_bgwords .num2 {
+    top: 276px;
+    font-size: 50px;
+}
+.main1 .third_bgwords {
+    display: none;
+}
+
+.main1 .third_bgwords .download_box1 {
+    position: fixed;
+    top: 200px;
+    left: 455px;
+    z-index: 210;
+    width: 500px;
+    height: 230px;
+    border-radius: 20px;
+    background-color: #fff;
+    opacity: .85;
+    display: none;
+}
+.third_bgwords .download_box1 .close{
+    position: absolute;
+    width: 20px;
+    height: 20px;
+    top: 15px;
+    right: 20px;
+    background: url("ZCZ_images/icon_sprite-1.png") -70px -70px no-repeat;
+}
+.third_bgwords .download_box1 p {
+    position: absolute;
+    top:20px;
+    left: 105px;
+    font-size: 18px;
+    letter-spacing: 1px;
+    color: #000000;
+}
+.third_bgwords .download_box1 .APP {
+    position: absolute;
+    top: 108px;
+    left: 50px;
+    width: 170px;
+    height: 50px;
+    font-size: 14px;
+    border-radius: 10px;
+    background: #2d2d2d;
+    line-height: 50px;
+    text-align: center;
+}
+
+.third_bgwords .download_box1 span {
+    position: absolute;
+    top: 71px;
+    right: 72px;
+    font-size: 16px;
+    letter-spacing: 1px;
+}
+.third_bgwords .download_box1 img {
+    position: absolute;
+    width: 94px;
+    height: 94px;
+    top: 100px;
+    right: 85px;
+}
+.third_bgwords .download_box1 .line {
+    position: absolute;
+    top: 75px;
+    left: 250px;
+    width: 1px;
+    height: 110px;
+    background-color:#000;
+    opacity: .18;
+}
+
+.main1 .fourth_bgwords .num1 {
+    top: 200px;
+    font-size: 50px;
+}
+.main1 .fourth_bgwords .num2 {
+    top: 276px;
+    font-size: 50px;
+}
+.main1 .fourth_bgwords {
+    display: none;
+}
+
+.main1 .fourth_bgwords .download_box2 {
+    position: fixed;
+    top: 200px;
+    left: 455px;
+    z-index: 212;
+    width: 500px;
+    height: 230px;
+    border-radius: 20px;
+    background-color: #fff;
+    display: none;
+    opacity: .85;
+}
+.fourth_bgwords .download_box2 .close{
+    position: absolute;
+    width: 20px;
+    height: 20px;
+    top: 15px;
+    right: 20px;
+    background: url("ZCZ_images/icon_sprite-1.png") -70px -70px no-repeat;
+}
+.fourth_bgwords .download_box2 p {
+    position: absolute;
+    top:20px;
+    left: 105px;
+    font-size: 18px;
+    letter-spacing: 1px;
+    color: #000000;
+}
+.fourth_bgwords .download_box2 .APP {
+    position: absolute;
+    top: 108px;
+    left: 50px;
+    width: 170px;
+    height: 50px;
+    font-size: 14px;
+    border-radius: 10px;
+    background: #2d2d2d;
+    line-height: 50px;
+    text-align: center;
+}
+
+.fourth_bgwords .download_box2 span {
+    position: absolute;
+    top: 71px;
+    right: 72px;
+    font-size: 16px;
+    letter-spacing: 1px;
+}
+.fourth_bgwords .download_box2 img {
+    position: absolute;
+    width: 94px;
+    height: 94px;
+    top: 100px;
+    right: 85px;
+}
+.fourth_bgwords .download_box2 .line {
+    position: absolute;
+    top: 75px;
+    left: 250px;
+    width: 1px;
+    height: 110px;
+    background-color:#000;
+    opacity: .18;
+}
+
+
+.main1 .download_list .download_list_PC {
+    left: 200px;
+    opacity: .4;
+    background-image: url('ZCZ_images/精灵图.png');
+    background-position: -335px -824px;
+}
+.main1 .download_list .download_list_PC:hover{
+    opacity: 1;
+}
+
+.main1 .download_list .download_list_Mac {
+    left: 475px;
+    opacity: .4;
+    background-image: url('ZCZ_images/精灵图.png');
+    background-position: -223px -824px;
+}
+.main1 .download_list .download_list_Mac:hover {
+    opacity: 1;
+}
+
+.main1 .download_list .download_list_iPhone {
+    left: 760px;
+    opacity: .4;
+    background-image: url('ZCZ_images/精灵图.png');
+    background-position: -110px -824px;
+}
+.main1 .download_list .download_list_iPhone:hover {
+    opacity: 1;
+}
+.main1 .download_list .download_list_Android {
+    right: 200px;
+    opacity: .4;
+    background-image: url('ZCZ_images/精灵图.png');
+    background-position: 0px -824px;
+}
+.main1 .download_list .download_list_Android:hover {
+    opacity: 1;
+}
+.main1 .download_list .download_list_PC.ss,.main1 .download_list .download_list_Mac.ss,.main1 .download_list .download_list_iPhone.ss,.main1 .download_list .download_list_Android.ss{
+    opacity: 1;
+}
+
+
+.download_list_PC,.download_list_Mac,.download_list_iPhone,.download_list_Android {
+    position: absolute;
+    border-top-color: #fff;
+    top: -1px;
+    width: 110px;
+    height: 100%;
+}
+
+.main2 {
+    position: absolute;
+    margin-top: 650px;
+    width:100%;
+    height: 650px;
+    background: url("ZCZ_images/歌手/bg_singer.jpg");
+    display: block;
+}
+.main2 h2 {
+    position: absolute;
+    top: 39%;
+    left: 50%;
+    transform:translate(-50%);
+    font-size: 70px;
+    color: #fff;
+    letter-spacing: 2px;
+    text-align: center;
+    z-index: 5;
+}
+.main2 p {
+    position: absolute;
+    font-size: 26px;
+    color: #fff;
+    letter-spacing: 2px;
+    margin: 0 auto;
+}
+.main2 .main2_word2 {
+    top: 370px;
+    left: 500px;
+}
+.main2 .main2_word3 {
+    top: 412px;
+    left: 565px;
+}
+
+.main2 div {
+    position: absolute;
+    display: none;
+}
+.main2 .Eason {
+    top: 127px;
+    left: 286px;
+    width: 100%;
+    height: 100%;
+}
+.main2 .Liangying {
+    top: 128px;
+    right: 330px;
+}
+.main2 .JJ {
+    top: 376px;
+    left: 135px;
+}
+.main2 .Jay {
+    top: 503px;
+    left: 434px;
+}
+.main2 .Tingfeng {
+    top: 376px;
+    right: 180px;
+}
+.main2 .Jolin {
+    top: 504px;
+    right: 480px;
+}
+
+.main3 {
+    position: absolute;
+    margin-top: 1300px;
+    width: 100%;
+    height: 650px;
+    background: url("ZCZ_images/bg1.jpg") 50% no-repeat;
+    display: block;
+}
+.main3 span {
+    position: absolute;
+    font-size: 50px;
+    letter-spacing: 5px;
+    color: #fff;
+}
+.main3 .part1 {
+    top: 300px;
+    left: 130px;
+}
+.main3 .part2 {
+    top: 362px;
+    left: 130px;
+}
+.main3 i {
+    position: absolute;
+    font-size: 24px;
+    letter-spacing: 2px;
+    color: #fff;
+}
+.main3 .part3 {
+    top: 434px;
+    left: 130px;
+}
+.main3 .part4 {
+    top: 470px;
+    left: 130px;
+}
+.main3 .phone {
+    position: absolute;
+    top: 50px;
+    right: 50px;
+    width: 464px;
+    height: 713px;
+    background: url("ZCZ_images/lyric_phonebox.png") no-repeat;
+    background-size:88%;
+    display: none;
+}
+.main3 .phone .inner_phone {
+    position: absolute;
+    width: 300px;
+    height: 480px;
+    top: 98px;
+    right: 113px;
+    transform: rotate(7.31deg);
+    overflow: hidden;
+}
+.main3 .phone .inner_phone img {
+    position:absolute;
+    width: 79%;
+    top: 0px;
+    right: 46px;
+}
+.main3 .phone .inner_phone .img2{
+    display: none;
+}
+.main4 {
+    position: absolute;
+    margin-top: 1950px;
+    width: 100%;
+    height: 650px;
+    background: url("ZCZ_images/bg2.jpg") 50% no-repeat;
+    display: block;
+}
+
+.main4 span {
+    position: absolute;
+    font-size: 50px;
+    letter-spacing: 5px;
+    color: #fff;
+}
+.main4 .part1 {
+    top: 300px;
+    left: 700px;
+}
+.main4 .part2 {
+    top: 362px;
+    left: 700px;
+}
+.main4 i {
+    position: absolute;
+    font-size: 24px;
+    letter-spacing: 2px;
+    color: #fff;
+}
+.main4 .part3 {
+    top: 434px;
+    left: 700px;
+}
+.main4 .part4 {
+    top: 470px;
+    left: 700px;
+}
+.main4 .phone {
+    position: absolute;
+    top: 70px;
+    left: 100px;
+    width: 464px;
+    height: 713px;
+    background: url("ZCZ_images/like_phonebox.png") no-repeat;
+    background-size: 73%;
+    display: none;
+}
+.main4 .phone .inner_phone {
+    position: absolute;
+    width: 237px;
+    height: 353px;
+    top: 135px;
+    right: 182px;
+    transform: rotate(-5.8deg);
+    overflow: hidden;
+}
+.main4 .phone .inner_phone img {
+    position: absolute;
+    top: 0px;
+}
+
+.main5 {
+    position: absolute;
+    margin-top: 2600px;
+    width: 100%;
+    height: 650px;
+    background: url("ZCZ_images/bg3.jpg") 50% no-repeat;
+    display: block;
+}
+.main5 span {
+    position: absolute;
+    font-size: 50px;
+    letter-spacing: 5px;
+    color: #000;
+}
+.main5 .part1 {
+    top: 140px;
+    left: 130px;
+}
+.main5 .part2 {
+    top: 202px;
+    left: 130px;
+}
+.main5 i {
+    position: absolute;
+    font-size: 24px;
+    letter-spacing: 2px;
+    color: #000;
+}
+.main5 .part3 {
+    top: 264px;
+    left: 130px;
+}
+.main5 .part4 {
+    top: 300px;
+    left: 130px;
+}
+.main5 .pc {
+    position: absolute;
+    width: 500px;
+    height: 580px;
+    top: -30px;
+    right:120px;
+    display: block;
+    }
+.main5 .pc .top {
+    position: absolute;
+    top: 27px;
+    width: 100%;
+    height: 315px;
+    background: url("ZCZ_images/synchro_mac1.png") no-repeat;
+    background-size: 92%;
+}
+.main5 .pc .buttom {
+    position: absolute;
+    top: 328px;
+    width: 100%;
+    height: 300px;
+    background: url("ZCZ_images/synchro_mac2.png") no-repeat;
+    background-size: 92%;
+}
+.main5 .phone {
+    position: absolute;
+    width:215px;
+    height:280px;
+    top:350px;
+    left:220px;
+    background:url("ZCZ_images/synchro_phone-1.png.png") no-repeat;
+    background-size:100%;
+    display: none;
+}
+/*页面底部开始*/
+.footer {
+    position: absolute;
+    top: 3170px;
+    width:100%;
+    height: 80px;
+    background-color: rgba(0,0,0,.3);
+    overflow: hidden;
+    z-index: 100;
+}
+.footer_inner {
+    color: #fff;
+    height:46px;
+    margin: 17px auto;
+}
+.footer_inner p {
+    font-size: 12px;
+    height: 22px;
+    line-height: 22px;
+    text-align: center;
+}
+/*页面底部结束*/
